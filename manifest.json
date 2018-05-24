@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "pixivFittedImage",
+  "version": "0.0.2",
+
+  "description": "Resize image to fit within view height.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.pixiv.net/member_illust.php?mode=manga*"],
+    "js": ["content/manga/index.js"],
+    "css": ["content/manga/index.css"]
+  }, {
+    "matches": ["https://www.pixiv.net/member_illust.php?mode=medium*"],
+    "js": ["content/detail/index.js"]
+  }]
+}
