@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "pixivFittedImage",
-  "version": "0.0.2",
+  "version": "0.0.3",
 
   "description": "Resize image to fit within view height.",
   "icons": {
